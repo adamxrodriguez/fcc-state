@@ -3,7 +3,7 @@ import { useState } from "react";
 function NameList() {
   const [list, setList] = useState(["Jack", "Jill", "John"]);
   const [name, setName] = useState(() => "Jack");
-
+  
   const onAddName = () => {
     setList([...list, name]);
     setName("");
@@ -22,7 +22,7 @@ function NameList() {
         onChange={(e) => setName(e.target.value)}
       />
       <button onClick={onAddName}>Add Name</button>
-    </div>
+      </div>
   );
 }
 
